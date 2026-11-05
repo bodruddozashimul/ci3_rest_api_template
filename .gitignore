@@ -1,0 +1,36 @@
+# Logs & cache (keep index.html so CI3 folders stay in the repo)
+application/logs/*
+!application/logs/index.html
+application/cache/*
+!application/cache/index.html
+
+# Sessions / uploads
+application/sessions/
+uploads/*
+!uploads/.gitkeep
+
+# Environment / local config
+.env
+*.local.php
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE / editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+nbproject/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+*.log
+*.bak
+*.swp
+*.tmp
